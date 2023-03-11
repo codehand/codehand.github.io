@@ -187,6 +187,13 @@ const workExperiences = {
     },
     {
       role: "Senior Software Engineer",
+      company: "Techub IO Viet Nam",
+      companylogo: require("./assets/images/gcp.png"),
+      date: "Sep 2019 - Nov 2020",
+      desc: "A startup about outsource for singapore market."
+    },
+    {
+      role: "Senior Software Engineer",
       company: "GiaoHangNhanh (GHN)",
       companylogo: require("./assets/images/ghn.jpeg"),
       date: "Mar 2017 - Aug 2019",
