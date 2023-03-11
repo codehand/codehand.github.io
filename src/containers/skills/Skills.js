@@ -58,7 +58,7 @@ export default function Skills() {
                   >
                     {/* {skills} */}
                     {emoji("⚡ ")}
-                    <span dangerouslySetInnerHTML={{ __html: skills }} />
+                    <span dangerouslySetInnerHTML={{__html: skills}} />
                   </p>
                 );
               })}

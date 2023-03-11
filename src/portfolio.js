@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "Experienced senior Golang engineer with over ten years of expertise in designing, building, and deploying scalable, efficient backend solutions. Proficient in microservices architecture, RESTful APIs, and cloud technologies."
   ),
-  resumeLink:
-    "#", // Set to empty to hide the button
+  resumeLink: "#", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -47,11 +46,12 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Unleashing the Power of Go: How a Senior Engineer Can Build Anything with Golang",
+  subTitle:
+    "Unleashing the Power of Go: How a Senior Engineer Can Build Anything with Golang",
   skills: [
     "Experience in Software Design and Developing enterprise applications",
     "Strong understanding of <b>Goroutines, Channels, and TDD</> in Golang",
-    "Experience in developing <b>REST, and gRPC APIs for Monolithic and Microservices architecture</> using Golang",
+    "Experience in developing <b>REST, and gRPC APIs for Monolithic and Microservices architecture</> using Golang"
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -60,12 +60,12 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "golang",
-      fontAwesomeClassname: "fab fa-golang",
+      fontAwesomeClassname: "fab fa-golang"
     },
     {
       skillName: "redis",
       fontAwesomeClassname: "fab fa-redis"
-    },
+    }
     // {
     //   skillName: "sass",
     //   fontAwesomeClassname: "fab fa-sass"
@@ -182,7 +182,7 @@ const workExperiences = {
       date: "Nov 2020 - Jan 2023",
       desc: "Healthtech platform for Vietnam and South East Asia.",
       descBullets: [
-        "Thuocsi.vn is building a healthtech platform for Vietnam and Southeast Asia that will elevate quality and access to healthcare through transformative technologies for practitioners to patients, and all other stakeholders inbetween.",
+        "Thuocsi.vn is building a healthtech platform for Vietnam and Southeast Asia that will elevate quality and access to healthcare through transformative technologies for practitioners to patients, and all other stakeholders inbetween."
       ]
     },
     {
