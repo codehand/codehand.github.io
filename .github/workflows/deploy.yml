@@ -10,6 +10,8 @@ on:
       - master
   schedule:
     - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+permissions:
+  id-token: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
