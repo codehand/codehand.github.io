@@ -1,21 +1,24 @@
-name: Deploy Code to Release Branch
+name: Build and Deploy
+env:
+  CI: false
+  GITHUB_USERNAME: ${{ github.repository_owner }}
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
+  USE_GITHUB_DATA: "true"
 on:
-  workflow_dispatch:
-
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
 jobs:
-  build:
-    name: Push to Release Branch
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      # Workflow dispatch event that pushes the current version to the release branch.
-      # From here the secondary production deployment workflow will trigger to build the dependencies.
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: releases/v4
-          folder: .
-          clean: false
-          single-commit: true
+          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
+          BRANCH: gh-pages # The branch the action should deploy to.
