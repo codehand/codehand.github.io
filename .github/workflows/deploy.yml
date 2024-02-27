@@ -19,19 +19,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup node 16
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: 'npm'
-
-      - name: Install and Build 🔧 # Build the Project
-        run: |
-          npm install
-          npm run build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: actions/deploy-pages@v4
         with:
           GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
