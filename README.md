@@ -1,33 +1,96 @@
-<h1 align="center">Hi 👋, I'm codehand</h1>
-<h3 align="center">Senior Golang Developer</h3>
+<div align="center">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=codehand&label=Profile%20views&color=0e75b6&style=flat" alt="codehand" /> </p>
+# 🏭 MOFY.FACTORY
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=codehand" alt="codehand" /></a> </p>
+### Senior Backend Engineer — Golang · Microservices · AI Workflows
 
-- 🌱 I’m currently learning **microservice, NFT**
+`STATUS: OPERATIONAL` · `LOCATION: Ho Chi Minh City, VN` · `UPTIME: 11+ years`
 
-- 👨‍💻 All of my projects are available at [https://codehand.github.io/](https://codehand.github.io/)
+[Portfolio](https://codehand.github.io/) · [Agent Console](https://codehand.github.io/pages/mission.html) · [Blog](https://next1million.xyz/) · [LinkedIn](https://www.linkedin.com/in/mofy-nguyen)
 
-- 📝 I regularly write articles on [https://next1million.xyz/](https://next1million.xyz/)
+</div>
 
-- 💬 Ask me about **golang**
+---
 
-- 📫 How to reach me **tamthanh770@gmail.com**
+## ⚙️ PRODUCTION LINE
 
-- ⚡ Fun fact **dev fun**
+Modules currently on the assembly line. Each unit ships from [github.com/codehand](https://github.com/codehand).
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/tam-nguyen-b566b5129/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/tam-nguyen-b566b5129/" height="30" width="40" /></a>
+| Station | Module | Status | Stack |
+|:--------|:-------|:-------|:------|
+| **ST-05** | [agentic-kanban](https://github.com/codehand/agentic-kanban) | ◌ In Production | Go · MCP · SQLite · AI Workflows |
+| **ST-04** | [open modules](https://github.com/codehand/codehand) | ◌ In Production | Go · AI Workflows · Automation |
+| **ST-03** | TKG Marketplace | ● Assembled | Go · gRPC · Kubernetes · Zinc |
+| **ST-02** | Daily Pharmacie | ● Assembled | Go · Microservices · Next.js · PostgreSQL |
+| **ST-01** | Simple Blog | ● Assembled | Go · Gin · Vue.js · < 100KB |
+
+---
+
+## 🔧 TECH STACK
+
+```
+BACKEND SYSTEMS ─────────────────────── 10+ YEARS
+├─ Golang ································· 99%
+├─ Docker ································· 90%
+├─ Kubernetes ····························· 80%
+└─ Node.js ································ 70%
+
+INTERFACE LAYER ─────────────────────── 8+ YEARS
+├─ Next.js ································ 90%
+├─ Vue.js ································· 85%
+├─ React ·································· 70%
+└─ Flutter ································ 60%
+```
+
+<details>
+<summary><b>Full inventory</b></summary>
+
+**Backend:** Golang · gRPC · REST · Docker · Kubernetes · PostgreSQL · MySQL · MongoDB · Redis · SQLite · Kafka · RabbitMQ · Nginx
+
+**Frontend:** Next.js · React · Vue.js · Vuetify · Flutter · React Native
+
+**Tools:** Git · Postman · Grafana · Firebase · GCP · Heroku
+
+**Previously:** Ruby on Rails · Java · Hugo · Ionic · Unity · Unreal Engine
+
+</details>
+
+---
+
+## 📊 FACTORY METRICS
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=codehand&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=16d5ff&icon_color=7d5cf0&text_color=8e9ba8" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=codehand&layout=compact&hide_border=true&bg_color=0d1117&title_color=16d5ff&text_color=8e9ba8" alt="languages" />
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://grafana.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="40" height="40"/> </a> <a href="https://graphql.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="graphql" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://gohugo.io/" target="_blank" rel="noreferrer"> <img src="https://api.iconify.design/logos-hugo.svg" alt="hugo" width="40" height="40"/> </a> <a href="https://ionicframework.com" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg" alt="ionic" width="40" height="40"/> </a> <a href="https://kafka.apache.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" alt="kafka" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.rabbitmq.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" alt="rabbitMQ" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a> <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="unreal" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> <a href="https://vuetifyjs.com/en/" target="_blank" rel="noreferrer"> <img src="https://bestofjs.org/logos/vuetify.svg" alt="vuetify" width="40" height="40"/> </a> </p>
+---
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=codehand&show_icons=true&locale=en&layout=compact" alt="codehand" /></p>
+## 🏗️ PRODUCTION HISTORY
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codehand&show_icons=true&locale=en" alt="codehand" /></p>
+```
+2025─now  ██████████  Coming soon
+2024─2025 ██████████  Senior Software Engineer · Buymed
+2023─2024 ██████████  Senior Backend Engineer · Sky Mavis
+2020─2023 ██████████  Senior Software Engineer · Buymed
+2019─2020 ██████████  Senior Software Engineer · Techub IO
+2017─2019 ██████████  Senior Software Engineer · Giao Hang Nhanh
+2016─2017 ██████████  Ruby on Rails Developer · Trycz
+2014─2016 ██████████  Java Web Developer · Meme Media
+```
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=codehand&" alt="codehand" /></p>
+---
 
+## 📡 DISPATCH
+
+```
+✉  tamthanh770@gmail.com
+◉  Ho Chi Minh City, VN
+🔗 linkedin.com/in/mofy-nguyen
+```
+
+<div align="center">
+
+`LINE STATUS: OPERATIONAL` · `ZERO DOWNTIME SINCE 2014`
+
+</div>
