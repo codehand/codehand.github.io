@@ -8,6 +8,16 @@
 <body>
 <x-dc>
 <helmet>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <title>Mofy — Mission Control</title>
+  <meta name="description" content="Interactive agent console — explore Mofy's career, skills, projects and timeline through a mission control interface.">
+  <meta property="og:title" content="Mofy — Mission Control">
+  <meta property="og:description" content="Interactive agent console — explore Mofy's career, skills, projects and timeline through a mission control interface.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://codehand.github.io/pages/mission.html">
+  <meta property="og:image" content="https://codehand.github.io/assets/img/mofy.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="colors_and_type.css">
   <style>
     html, body { height: 100%; overflow: hidden; }
@@ -21,6 +31,14 @@
     ::placeholder { color: var(--fg3); }
     input { outline: none; }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLXEWJM74K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LLXEWJM74K');
+  </script>
 </helmet>
 
 <div data-theme="{{ themeAttr }}" data-screen-label="Mission Control" style="height: 100vh; display: flex; flex-direction: column; background: var(--bg1); color: var(--fg1); font-family: var(--font-sans); overflow: hidden;">
