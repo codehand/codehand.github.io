@@ -1,820 +1,703 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/img/favicon.png" type="image/png">
-    <meta name="title" content="Codehand | Developer Portfolio">
-    <meta name="description" content="Experienced senior Golang engineer with over ten years of expertise in designing, building, and deploying scalable, efficient backend solutions. Proficient in microservices architecture, RESTful APIs, and cloud technologies.">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://codehand.github.io/">
-    <meta property="og:title" content="Codehand | Developer Portfolio">
-    <meta property="og:description" content="Experienced senior Golang engineer with over ten years of expertise in designing, building, and deploying scalable, efficient backend solutions. Proficient in microservices architecture, RESTful APIs, and cloud technologies.">
-    <!-- Link to a hosted image -->
-    <!-- <meta property="og:image" content=""> -->
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://codehand.github.io/">
-    <meta property="twitter:title" content="Codehand | Developer Portfolio">
-    <meta property="twitter:description" content="Experienced senior Golang engineer with over ten years of expertise in designing, building, and deploying scalable, efficient backend solutions. Proficient in microservices architecture, RESTful APIs, and cloud technologies.">
-    
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-
-    <title>Mofy Portfolio</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLXEWJM74K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-LLXEWJM74K');
-    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./assets/js/support.js"></script>
 </head>
-
 <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Mofy</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Projects
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> ContactMe
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
-
-                <!-- theme change button  -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/tam-nguyen-b566b5129" aria-label="home__social-icon" target="_blank"
-                            class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="https://next1million.xyz/" aria-label="home__social-icon" target="_blank"
-                            class="home__social-icon">
-                            <i class="uil uil-dribbble"></i>
-                        </a>
-                        <a href="https://github.com/codehand/codehand" aria-label="home__social-icon" target="_blank"
-                            class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                    </div>
-                    <div class="home__img">
-                        <svg class="home__blob" viewbox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="12" y="-5" href="./assets/img/m2.png" />
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I'am Mofy</h1>
-                        <h3 class="home__subtitle">Senior Software Engineer</h3>
-                        <p class="home__discription">Experienced senior Golang engineer with over ten years of expertise in designing, building, and deploying scalable, efficient backend solutions.</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me<i class="uil uil-message button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
-                        <i class="uil uil-arrow-down"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My introduction</span>
-            <div class="about__container container grid">
-                <img src="./assets/img/u2.png" alt="about" class="about__img">
-                <div class="about__data">
-                    <p class="about__description">
-                        Web developer, with extensive knowledge and years of experience, working in web technologies and
-                        Ui / Ux design, delivering quality work.
-                    </p>
-                    <div class="about__info">
-                        <div>
-                            <span class="about__info-title">11+</span>
-                            <span class="about__info-name">Years <br> experience</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">10+</span>
-                            <span class="about__info-name">Completed <br> project</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">05+</span>
-                            <span class="about__info-name">Companies <br> worked</span>
-                        </div>
-                    </div>
-                    <div class="about__buttons">
-                        <a href="/assets/pdf/Mofy.pdf" download class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
-            <div class="skills__container container grid">
-                <!--==================== SKILLS 1 ====================-->
-                <div class="skills__content skills__open">
-                    <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Frontend Developer</h1>
-                            <span class="skills__subtitle">More than 8 years</span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Reactjs</h3>
-                                <span class="skills__number">70%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__react"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Nextjs</h3>
-                                <span class="skills__number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__nextjs"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Flutter</h3>
-                                <span class="skills__number">60%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__flutter"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">Vuejs</h3>
-                                <span class="skills__number">85%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__vuejs"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== SKILLS 2 ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-server-network skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Backend Developer</h1>
-                            <span class="skills__subtitle">More than 10 years</span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">GOLANG</h3>
-                                <span class="skills__number">99%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__golang"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">NODE JS</h3>
-                                <span class="skills__number">70%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__node"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">KUBERNETES</h3>
-                                <span class="skills__number">80%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__kubernetes"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">DOCKER</h3>
-                                <span class="skills__number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__python"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== SKILLS 3 ====================-->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-swatchbook skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Soft Skills</h1>
-                            <span class="skills__subtitle">More than 8 years</span>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-                    <div class="skills__list grid">
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">LEADERSHIP</h3>
-                                <span class="skills__number">5+ years</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__figma"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">ENGLISH</h3>
-                                <span class="skills__number">Intermediate</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__english"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__titles">
-                                <h3 class="skills__name">FULLSTACK</h3>
-                                <span class="skills__number">90%</span>
-                            </div>
-                            <div class="skills__bar">
-                                <span class="skills__percentage skills__fullstack"></span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
-                    </div>
-                    <div class="qualification__button button--flex" data-target="#education">
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="work">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Senior Backend Engineer</h3>
-                                <span class="qualification__subtitle">Sky Mavis - VietNam</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2023 - 2024
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Senior Software Engineer</h3>
-                                <span class="qualification__subtitle">Buymed - VietNam</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2020 - 2023
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <!--==================== QUALIFICATION 3 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Senior Software Engineer</h3>
-                                <span class="qualification__subtitle">Techub IO - VietNam</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019 - 2020
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <!--==================== QUALIFICATION 4 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Senior Software Engineer</h3>
-                                <span class="qualification__subtitle">Giao Hang Nhanh - VietNam</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2017 - 2019
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="qualification__data">
-                            
-                            <div>
-                                <h3 class="qualification__title">Ruby on Rails Developer</h3>
-                                <span class="qualification__subtitle">Trycz - VietNam</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2016 - 2017
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                        </div>
-
-                        <div class="qualification__data">
-                            <div></div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Java Web Developer</h3>
-                                <span class="qualification__subtitle">Meme Media - VietNam</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2014 - 2016
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="qualification__sections">
-
-                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                    <div class="qualification__content" data-content id="education">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Student</h3>
-                                <span class="qualification__subtitle">HCM University of Science - VietNam</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2011 - 2015
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!--==================== SERVICES ====================-->
-        <section class="services section" id="projects">
-            <h2 class="section__title">Personal Projects</h2>
-            <span class="section__subtitle">What i offer</span>
-            <div class="services__container container grid">
-                <!--==================== SERVICES 1 ====================-->
-                <div class="services__content">
-                    <div>
-                        <img src="./assets/img/go_next.png" height="120" alt="Go Next" class="portfolio__img" style="
-    padding: 5px 5px 5px 5px;height: 120px !important;">
-                        <h3 class="services__title">Simple <br> Blog</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Simple <br> Blog</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>- Website for posting news or sharing insights about Golang, interview experiences, and project management.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Optimized static website under 100kb using Gin server.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create ux element interactions.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Frontend developed using Vue.js and JavaScript.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-link-h services__modal-icon"></i>
-                                    <a href="https://next1million.xyz/projects">Visit next1million.xyz</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== SERVICES 2 ====================-->
-                <div class="services__content">
-                    <div>
-                        <img src="./assets/img/daily.png" height="120" alt="Go Next" class="portfolio__img" style="
-    padding: 5px 5px 5px 5px;height: 120px !important;">
-                        <h3 class="services__title">Daily <br> Pharmacie</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Daily <br> Pharmacie</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>A product to support the management and sale of pharmaceuticals and medicines.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Scaled into two levels: Small business scale, such as shops or individual B2C sellers. Upgraded scale to a pharmaceutical trading platform B2B.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Product prices are automatically calculated based on desired conditions with multi-tiered discounts.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Remote health care services or home booking available.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Built using a microservice architecture, leveraging Golang & Docker for process optimization and performance enhancement.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Interface optimized for SEO using Nextjs.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Utilizes PostgreSQL database and ORM builder.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Dynamic gateway, API-based authentication, resource management, scalable according to traffic.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-link-h services__modal-icon"></i>
-                                    <a href="http://dailypharmacie.tech/">Visit dailypharmacie.tech</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!--==================== SERVICES 3 ====================-->
-                <div class="services__content">
-                    <div>
-                        <img src="./assets/img/tkg_cover.png" height="120" alt="Go Next" class="portfolio__img" style="
-    padding: 5px 5px 5px 5px;height: 120px !important;">
-                        <h3 class="services__title">TKG <br> Martketplace</h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        View More
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">TKG <br> Martketplace</h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Website for managing and selling personal shopping items, pre-owned items of value such as footwear, clothing, jewelry, or collectibles.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Products sourced from various large brands across different regions such as US, UK, CN, Singapore, etc.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Backend built on microservice architecture incorporating GRPC Golang, Docker, and Kubernetes.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Utilizes Zinc for search functionality.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Frontend supports web desktop, iOS, and Android apps.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-link-h services__modal-icon"></i>
-                                    <a href="http://tkg.next1million.com">Visit tkg.next1million.com</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
-
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== PORTFOLIO 1 ====================-->
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio1.jpg" alt="portfolio image 1" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Mofy Portfolio</h3>
-                            <p class="portfolio__description">Unleashing the Power of Go: How a Senior Engineer Can Build Anything with Golang.</p>
-                            <a href="https://codehand.github.io/" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-pagination"></div>
-
-            </div>
-        </section>
-
-        <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">You have a new project</h2>
-                        <p class="project__description">Contact me now and start your project.</p>
-                        <a href="#contact" class="button button--flex button--white">
-                            Contact Me
-                            <i class="uil uil-message project__icon button__icon"></i>
-                        </a>
-                    </div>
-                    <img src="./assets/img/u2.png" alt="project image" class="project__img">
-                </div>
-            </div>
-        </section>
-
-        
-
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
-
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">034-414-3456</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">tamthanh770@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Ho Chi Minh City</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-                        <div>
-                            <a href="#" class="button button--flex">
-                                Send Message
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <button type="submit" style="display:none">Submit</button>
-                </form>
-
-            </div>
-        </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Mofy</h1>
-                    <span class="footer__subtitle">Golang developer</span>
-                </div>
-                <ul class="footer__links">
-                    <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </footer>
-
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" aria-label="scroll-up" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #080A0F; }
+    body::after {
+      content: ""; position: fixed; inset: 0; z-index: 9999; pointer-events: none; opacity: 0.05;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+    }
+    @keyframes beltMove { to { background-position: 56px 0; } }
+    @keyframes beltMoveRev { to { background-position: -56px 0; } }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+    @keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+    @keyframes blink { 50% { opacity: 0.25; } }
+    @keyframes scanY { 0% { top: 0%; } 100% { top: calc(100% - 2px); } }
+    @keyframes spinSlow { to { transform: rotate(360deg); } }
+    ::selection { background: rgba(22,213,255,0.35); color: #ffffff; }
+  </style>
+</helmet>
+
+<div data-screen-label="AI Factory Portfolio" style="font-family: 'Inter', sans-serif; background: #080A0F; color: #E8EDF5; min-height: 100vh; overflow-x: hidden; position: relative;">
+
+  <!-- ======================= FIXED NAV ======================= -->
+  <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 14px 40px; background: rgba(8,10,15,0.55); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.07);">
+    <a href="#home" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+      <span style="width: 10px; height: 10px; border-radius: 50%; background: #16d5ff; box-shadow: 0 0 12px rgba(22,213,255,0.9); animation: blink 2.4s ease-in-out infinite;"></span>
+      <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 0.04em; color: #E8EDF5;">MOFY<span style="color: #16d5ff;">.FACTORY</span></span>
     </a>
+    <div style="display: flex; align-items: center; gap: 28px;">
+      <a href="#modules" style="font-size: 13px; font-weight: 500; letter-spacing: 0.06em; color: #8e9ba8; text-decoration: none;" style-hover="color: #16d5ff;">MODULES</a>
+      <a href="#inspection" style="font-size: 13px; font-weight: 500; letter-spacing: 0.06em; color: #8e9ba8; text-decoration: none;" style-hover="color: #16d5ff;">INSPECTION</a>
+      <a href="#contact" style="font-size: 13px; font-weight: 500; letter-spacing: 0.06em; color: #8e9ba8; text-decoration: none;" style-hover="color: #16d5ff;">CONTACT</a>
+      <a href="https://github.com/codehand" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; border-radius: 8px; border: 1px solid rgba(22,213,255,0.4); background: rgba(22,213,255,0.08); color: #16d5ff; font-size: 13px; font-weight: 600; text-decoration: none;" style-hover="background: rgba(22,213,255,0.18); box-shadow: 0 0 20px rgba(22,213,255,0.25);">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"></path></svg>
+        GITHUB
+      </a>
+    </div>
+  </nav>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+  <!-- ======================= HERO ======================= -->
+  <header id="home" data-screen-label="Hero" style="position: relative; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 140px 40px 0; max-width: 100%; box-sizing: border-box;">
 
-    <!--==================== MAIN JS ====================-->
-    <script src="./assets/js/main.js"></script>
+    <!-- blueprint grid -->
+    <div style="position: absolute; inset: 0; background-image: linear-gradient(rgba(141,160,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(141,160,255,0.05) 1px, transparent 1px); background-size: 64px 64px; -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 75%); mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 75%); pointer-events: none;"></div>
+    <!-- neon orbs (parallax) -->
+    <div data-parallax="0.18" style="position: absolute; top: 12%; left: 8%; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(22,213,255,0.14) 0%, transparent 65%); filter: blur(10px); pointer-events: none;"></div>
+    <div data-parallax="0.3" style="position: absolute; top: 28%; right: 4%; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(125,92,240,0.16) 0%, transparent 65%); filter: blur(10px); pointer-events: none;"></div>
+    <!-- 3D kinetic sculpture (hero only) -->
+    <div data-hero-3d="true" style="position: absolute; top: 5%; right: -5%; width: min(48vw, 680px); height: min(74vh, 680px); pointer-events: none; z-index: 1;"></div>
+
+    <div style="position: relative; z-index: 2; max-width: 1140px; margin: 0 auto; width: 100%;">
+      <div style="display: inline-flex; align-items: center; gap: 10px; padding: 7px 16px; border-radius: 1000px; border: 1px solid rgba(22,213,255,0.3); background: rgba(22,213,255,0.06); margin-bottom: 32px;">
+        <span style="width: 7px; height: 7px; border-radius: 50%; background: #2fd06b; box-shadow: 0 0 10px rgba(47,208,107,0.9); animation: blink 2s ease-in-out infinite;"></span>
+        <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; color: #9fb4c4;">PRODUCTION LINE — ONLINE · HO CHI MINH CITY</span>
+      </div>
+
+      <h1 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(56px, 9vw, 124px); line-height: 0.98; letter-spacing: -0.03em; margin: 0 0 28px; color: #F2F6FC;">
+        Mofy builds the<br>
+        <span style="background: linear-gradient(100deg, #16d5ff 10%, #7d5cf0 90%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">machines behind</span><br>
+        the machines.
+      </h1>
+
+      <p style="max-width: 560px; font-size: 17px; line-height: 1.7; color: #8e9ba8; margin: 0 0 40px; text-wrap: pretty;">
+        Senior backend engineer — 11+ years designing, assembling and shipping scalable Golang systems, AI workflows and automation modules. Each unit below rolled off this line.
+      </p>
+
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <a href="#modules" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px; border-radius: 10px; background: linear-gradient(135deg, #16d5ff 0%, #01a2ef 100%); color: #04121a; font-size: 15px; font-weight: 700; text-decoration: none; box-shadow: 0 0 32px rgba(22,213,255,0.35);" style-hover="box-shadow: 0 0 48px rgba(22,213,255,0.55); transform: translateY(-2px);">
+          Enter the line
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+        </a>
+        <a href="https://codehand.github.io/assets/pdf/Mofy.pdf" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.03); color: #E8EDF5; font-size: 15px; font-weight: 600; text-decoration: none;" style-hover="border-color: rgba(125,92,240,0.6); box-shadow: 0 0 28px rgba(125,92,240,0.25);">Spec sheet (CV)</a>
+      </div>
+
+      <!-- telemetry strip -->
+      <div style="display: flex; gap: 56px; margin-top: 72px; flex-wrap: wrap;">
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #16d5ff;">11+</span>
+          <span style="font-size: 12px; letter-spacing: 0.14em; color: #6c7d8e;">YEARS RUNTIME</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #7d5cf0;">10+</span>
+          <span style="font-size: 12px; letter-spacing: 0.14em; color: #6c7d8e;">UNITS SHIPPED</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #E8EDF5;">05+</span>
+          <span style="font-size: 12px; letter-spacing: 0.14em; color: #6c7d8e;">FACTORIES SERVED</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- conveyor marquee at hero base -->
+    <div style="position: relative; margin-top: 90px; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 18px 0; overflow: hidden; background: rgba(255,255,255,0.015);">
+      <div style="display: flex; width: max-content; gap: 0; animation: marquee 30s linear infinite;">
+        <div style="display: flex; gap: 48px; padding-right: 48px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.22em; color: #4c6075; white-space: nowrap;">
+          <span>GOLANG</span><span style="color: #16d5ff;">◆</span><span>MICROSERVICES</span><span style="color: #7d5cf0;">◆</span><span>KUBERNETES</span><span style="color: #16d5ff;">◆</span><span>AI WORKFLOWS</span><span style="color: #7d5cf0;">◆</span><span>gRPC</span><span style="color: #16d5ff;">◆</span><span>DOCKER</span><span style="color: #7d5cf0;">◆</span><span>AUTOMATION</span><span style="color: #16d5ff;">◆</span><span>POSTGRESQL</span><span style="color: #7d5cf0;">◆</span>
+        </div>
+        <div style="display: flex; gap: 48px; padding-right: 48px; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.22em; color: #4c6075; white-space: nowrap;">
+          <span>GOLANG</span><span style="color: #16d5ff;">◆</span><span>MICROSERVICES</span><span style="color: #7d5cf0;">◆</span><span>KUBERNETES</span><span style="color: #16d5ff;">◆</span><span>AI WORKFLOWS</span><span style="color: #7d5cf0;">◆</span><span>gRPC</span><span style="color: #16d5ff;">◆</span><span>DOCKER</span><span style="color: #7d5cf0;">◆</span><span>AUTOMATION</span><span style="color: #16d5ff;">◆</span><span>POSTGRESQL</span><span style="color: #7d5cf0;">◆</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================= MODULES / CONVEYOR ======================= -->
+  <section id="modules" data-screen-label="Modules conveyor" style="position: relative; padding: 140px 40px 80px; max-width: 1140px; margin: 0 auto;">
+
+    <div data-reveal="up" style="transition: opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1); margin-bottom: 90px;">
+      <div style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.24em; color: #16d5ff; margin-bottom: 16px;">✦ CHECKPOINT 01 — ASSEMBLY</div>
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 60px); letter-spacing: -0.02em; line-height: 1.05; margin: 0 0 18px; color: #F2F6FC;">Modules on the line</h2>
+      <p style="max-width: 520px; font-size: 16px; line-height: 1.7; color: #8e9ba8; margin: 0; text-wrap: pretty;">Production units sourced live from <a href="https://github.com/codehand" target="_blank" style="color: #16d5ff; text-decoration: none; border-bottom: 1px solid rgba(22,213,255,0.4);">github.com/codehand</a>. Scroll to advance the belt.</p>
+    </div>
+
+    <!-- vertical production spine -->
+    <div style="position: absolute; left: 60px; top: 320px; bottom: 40px; width: 1px; background: linear-gradient(180deg, rgba(22,213,255,0.5), rgba(125,92,240,0.4) 60%, transparent); pointer-events: none;"></div>
+
+    <div style="display: flex; flex-direction: column; gap: 110px;">
+
+      <!-- ============ MODULE 01 ============ -->
+      <article data-reveal="right" style="transition: opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1); position: relative; padding-left: 64px;">
+        <div style="position: absolute; left: 12px; top: 6px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <span style="width: 9px; height: 9px; border-radius: 50%; background: #16d5ff; box-shadow: 0 0 14px rgba(22,213,255,0.9);"></span>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: #4c6075; writing-mode: vertical-rl;">ST-01</span>
+        </div>
+        <div style="border-radius: 18px; padding: 1px; background: linear-gradient(160deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.06) 30%, rgba(22,213,255,0.25) 65%, rgba(125,92,240,0.38) 100%);">
+          <div style="border-radius: 17px; background: rgba(12,16,24,0.74); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); padding: 36px 40px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; color: #6c7d8e;">MOD-001 · STATIC SYSTEMS</span>
+              <span style="display: inline-flex; align-items: center; gap: 7px; padding: 5px 13px; border-radius: 1000px; background: rgba(47,208,107,0.1); border: 1px solid rgba(47,208,107,0.35); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: #2fd06b;">● ASSEMBLED</span>
+            </div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.01em; margin: 0 0 14px; color: #F2F6FC;">Simple Blog</h3>
+            <p style="font-size: 15px; line-height: 1.7; color: #8e9ba8; margin: 0 0 24px; max-width: 640px; text-wrap: pretty;">An ultra-light publishing engine for Golang insights, interview notes and project management writing — the whole static site ships under 100 KB on a Gin server, with hand-built UX interactions.</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px;">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(22,213,255,0.3); color: #16d5ff; background: rgba(22,213,255,0.05);">GOLANG</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(22,213,255,0.3); color: #16d5ff; background: rgba(22,213,255,0.05);">GIN</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(125,92,240,0.4); color: #a78bfa; background: rgba(125,92,240,0.07);">VUE.JS</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.14); color: #8e9ba8; background: rgba(255,255,255,0.03);">&lt; 100 KB</span>
+            </div>
+            <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+              <a href="https://github.com/codehand" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #16d5ff; text-decoration: none;" style-hover="text-shadow: 0 0 16px rgba(22,213,255,0.8);">↳ Repository</a>
+              <a href="https://next1million.xyz/" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #8e9ba8; text-decoration: none;" style-hover="color: #E8EDF5;">⌁ Live — next1million.xyz</a>
+            </div>
+          </div>
+        </div>
+        <!-- conveyor belt under card -->
+        <div style="margin-top: 0; height: 16px; border-radius: 0 0 10px 10px; border: 1px solid rgba(255,255,255,0.09); border-top: none; background-image: repeating-linear-gradient(90deg, rgba(22,213,255,0.16) 0px, rgba(22,213,255,0.16) 22px, rgba(255,255,255,0.02) 22px, rgba(255,255,255,0.02) 56px); animation: beltMove 1.4s linear infinite;"></div>
+        <div style="display: flex; justify-content: space-between; padding: 0 36px; margin-top: -3px;">
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite; border-top-color: rgba(22,213,255,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite; border-top-color: rgba(22,213,255,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite; border-top-color: rgba(22,213,255,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite; border-top-color: rgba(22,213,255,0.5);"></span>
+        </div>
+      </article>
+
+      <!-- ============ MODULE 02 ============ -->
+      <article data-reveal="left" style="transition: opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1); position: relative; padding-left: 64px;">
+        <div style="position: absolute; left: 12px; top: 6px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <span style="width: 9px; height: 9px; border-radius: 50%; background: #7d5cf0; box-shadow: 0 0 14px rgba(125,92,240,0.9);"></span>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: #4c6075; writing-mode: vertical-rl;">ST-02</span>
+        </div>
+        <div style="border-radius: 18px; padding: 1px; background: linear-gradient(200deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.06) 30%, rgba(125,92,240,0.38) 65%, rgba(22,213,255,0.25) 100%);">
+          <div style="border-radius: 17px; background: rgba(12,16,24,0.74); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); padding: 36px 40px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; color: #6c7d8e;">MOD-002 · COMMERCE PLATFORM</span>
+              <span style="display: inline-flex; align-items: center; gap: 7px; padding: 5px 13px; border-radius: 1000px; background: rgba(47,208,107,0.1); border: 1px solid rgba(47,208,107,0.35); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: #2fd06b;">● ASSEMBLED</span>
+            </div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.01em; margin: 0 0 14px; color: #F2F6FC;">Daily Pharmacie</h3>
+            <p style="font-size: 15px; line-height: 1.7; color: #8e9ba8; margin: 0 0 24px; max-width: 640px; text-wrap: pretty;">Pharmaceutical commerce that scales from a single B2C shop to a full B2B trading platform — automated multi-tier discount pricing, remote healthcare booking, a dynamic API gateway and traffic-elastic microservices.</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px;">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(22,213,255,0.3); color: #16d5ff; background: rgba(22,213,255,0.05);">GOLANG</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(22,213,255,0.3); color: #16d5ff; background: rgba(22,213,255,0.05);">MICROSERVICES</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(125,92,240,0.4); color: #a78bfa; background: rgba(125,92,240,0.07);">NEXT.JS</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.14); color: #8e9ba8; background: rgba(255,255,255,0.03);">POSTGRESQL</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.14); color: #8e9ba8; background: rgba(255,255,255,0.03);">DOCKER</span>
+            </div>
+            <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+              <a href="https://github.com/codehand" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #16d5ff; text-decoration: none;" style-hover="text-shadow: 0 0 16px rgba(22,213,255,0.8);">↳ Repository</a>
+              <a href="http://dailypharmacie.tech/" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #8e9ba8; text-decoration: none;" style-hover="color: #E8EDF5;">⌁ Live — dailypharmacie.tech</a>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 0; height: 16px; border-radius: 0 0 10px 10px; border: 1px solid rgba(255,255,255,0.09); border-top: none; background-image: repeating-linear-gradient(90deg, rgba(125,92,240,0.18) 0px, rgba(125,92,240,0.18) 22px, rgba(255,255,255,0.02) 22px, rgba(255,255,255,0.02) 56px); animation: beltMoveRev 1.4s linear infinite;"></div>
+        <div style="display: flex; justify-content: space-between; padding: 0 36px; margin-top: -3px;">
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite reverse; border-top-color: rgba(125,92,240,0.6);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite reverse; border-top-color: rgba(125,92,240,0.6);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite reverse; border-top-color: rgba(125,92,240,0.6);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite reverse; border-top-color: rgba(125,92,240,0.6);"></span>
+        </div>
+      </article>
+
+      <!-- ============ MODULE 03 ============ -->
+      <article data-reveal="right" style="transition: opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1); position: relative; padding-left: 64px;">
+        <div style="position: absolute; left: 12px; top: 6px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <span style="width: 9px; height: 9px; border-radius: 50%; background: #16d5ff; box-shadow: 0 0 14px rgba(22,213,255,0.9);"></span>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: #4c6075; writing-mode: vertical-rl;">ST-03</span>
+        </div>
+        <div style="border-radius: 18px; padding: 1px; background: linear-gradient(160deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.06) 30%, rgba(22,213,255,0.25) 65%, rgba(125,92,240,0.38) 100%);">
+          <div style="border-radius: 17px; background: rgba(12,16,24,0.74); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); padding: 36px 40px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; color: #6c7d8e;">MOD-003 · GLOBAL MARKETPLACE</span>
+              <span style="display: inline-flex; align-items: center; gap: 7px; padding: 5px 13px; border-radius: 1000px; background: rgba(47,208,107,0.1); border: 1px solid rgba(47,208,107,0.35); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: #2fd06b;">● ASSEMBLED</span>
+            </div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.01em; margin: 0 0 14px; color: #F2F6FC;">TKG Marketplace</h3>
+            <p style="font-size: 15px; line-height: 1.7; color: #8e9ba8; margin: 0 0 24px; max-width: 640px; text-wrap: pretty;">A cross-region marketplace for collectible footwear, clothing and jewelry sourced from US, UK, CN and SG brands — gRPC microservices on Kubernetes, Zinc-powered search, with web, iOS and Android frontends.</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px;">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(22,213,255,0.3); color: #16d5ff; background: rgba(22,213,255,0.05);">GOLANG</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(22,213,255,0.3); color: #16d5ff; background: rgba(22,213,255,0.05);">gRPC</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(125,92,240,0.4); color: #a78bfa; background: rgba(125,92,240,0.07);">KUBERNETES</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.14); color: #8e9ba8; background: rgba(255,255,255,0.03);">ZINC SEARCH</span>
+            </div>
+            <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+              <a href="https://github.com/codehand" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #16d5ff; text-decoration: none;" style-hover="text-shadow: 0 0 16px rgba(22,213,255,0.8);">↳ Repository</a>
+              <a href="http://tkg.next1million.com" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #8e9ba8; text-decoration: none;" style-hover="color: #E8EDF5;">⌁ Live — tkg.next1million.com</a>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 0; height: 16px; border-radius: 0 0 10px 10px; border: 1px solid rgba(255,255,255,0.09); border-top: none; background-image: repeating-linear-gradient(90deg, rgba(22,213,255,0.16) 0px, rgba(22,213,255,0.16) 22px, rgba(255,255,255,0.02) 22px, rgba(255,255,255,0.02) 56px); animation: beltMove 1.4s linear infinite;"></div>
+        <div style="display: flex; justify-content: space-between; padding: 0 36px; margin-top: -3px;">
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite; border-top-color: rgba(22,213,255,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite; border-top-color: rgba(22,213,255,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite; border-top-color: rgba(22,213,255,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite; border-top-color: rgba(22,213,255,0.5);"></span>
+        </div>
+      </article>
+
+      <!-- ============ MODULE 04 — in progress ============ -->
+      <article data-reveal="left" style="transition: opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1); position: relative; padding-left: 64px;">
+        <div style="position: absolute; left: 12px; top: 6px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <span style="width: 9px; height: 9px; border-radius: 50%; background: #ffbc5e; box-shadow: 0 0 14px rgba(255,188,94,0.9); animation: blink 1.6s ease-in-out infinite;"></span>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: #4c6075; writing-mode: vertical-rl;">ST-04</span>
+        </div>
+        <div style="border-radius: 18px; padding: 1px; background: linear-gradient(200deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.05) 30%, rgba(255,188,94,0.22) 65%, rgba(125,92,240,0.3) 100%);">
+          <div style="border-radius: 17px; background: rgba(12,16,24,0.74); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); padding: 36px 40px; border-style: none;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.18em; color: #6c7d8e;">MOD-004 · OPEN SOURCE</span>
+              <span style="display: inline-flex; align-items: center; gap: 7px; padding: 5px 13px; border-radius: 1000px; background: rgba(255,188,94,0.08); border: 1px solid rgba(255,188,94,0.35); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: #ffbc5e;">◌ IN PRODUCTION</span>
+            </div>
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.01em; margin: 0 0 14px; color: #F2F6FC;">codehand / open modules</h3>
+            <p style="font-size: 15px; line-height: 1.7; color: #8e9ba8; margin: 0 0 24px; max-width: 640px; text-wrap: pretty;">Ongoing public experiments — Go services, automation tooling and AI workflow components, assembled in the open on GitHub.</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px;">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(22,213,255,0.3); color: #16d5ff; background: rgba(22,213,255,0.05);">GOLANG</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(125,92,240,0.4); color: #a78bfa; background: rgba(125,92,240,0.07);">AI WORKFLOWS</span>
+              <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; padding: 6px 14px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.14); color: #8e9ba8; background: rgba(255,255,255,0.03);">AUTOMATION</span>
+            </div>
+            <div style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+              <a href="https://github.com/codehand/codehand" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #16d5ff; text-decoration: none;" style-hover="text-shadow: 0 0 16px rgba(22,213,255,0.8);">↳ github.com/codehand</a>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 0; height: 16px; border-radius: 0 0 10px 10px; border: 1px solid rgba(255,255,255,0.09); border-top: none; background-image: repeating-linear-gradient(90deg, rgba(255,188,94,0.14) 0px, rgba(255,188,94,0.14) 22px, rgba(255,255,255,0.02) 22px, rgba(255,255,255,0.02) 56px); animation: beltMoveRev 1.4s linear infinite;"></div>
+        <div style="display: flex; justify-content: space-between; padding: 0 36px; margin-top: -3px;">
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite reverse; border-top-color: rgba(255,188,94,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite reverse; border-top-color: rgba(255,188,94,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite reverse; border-top-color: rgba(255,188,94,0.5);"></span>
+          <span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.16); background: #0d1117; animation: spinSlow 3s linear infinite reverse; border-top-color: rgba(255,188,94,0.5);"></span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======================= AI INSPECTION / SKILLS ======================= -->
+  <section id="inspection" data-screen-label="AI inspection skills" style="position: relative; padding: 140px 40px; max-width: 1140px; margin: 0 auto;">
+
+    <div data-reveal="up" style="transition: opacity 0.9s cubic-bezier(0.22,1,0.36,1), transform 0.9s cubic-bezier(0.22,1,0.36,1); margin-bottom: 70px;">
+      <div style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.24em; color: #7d5cf0; margin-bottom: 16px;">✦ CHECKPOINT 02 — AI INSPECTION</div>
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 60px); letter-spacing: -0.02em; line-height: 1.05; margin: 0 0 18px; color: #F2F6FC;">Quality control scan</h2>
+      <p style="max-width: 520px; font-size: 16px; line-height: 1.7; color: #8e9ba8; margin: 0; text-wrap: pretty;">Every module passes through automated capability inspection. Calibration values measured over 11 years of production.</p>
+    </div>
+
+    <div data-reveal="up" style="transition: opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1); border-radius: 20px; padding: 1px; background: linear-gradient(160deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.06) 25%, rgba(125,92,240,0.35) 60%, rgba(22,213,255,0.3) 100%); position: relative;">
+      <div style="border-radius: 19px; background: rgba(12,16,24,0.74); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); padding: 44px; position: relative; overflow: hidden;">
+
+        <!-- scan beam -->
+        <div style="position: absolute; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, rgba(22,213,255,0.8), transparent); box-shadow: 0 0 24px rgba(22,213,255,0.6); animation: scanY 5s ease-in-out infinite alternate; pointer-events: none;"></div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; flex-wrap: wrap; gap: 12px;">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.18em; color: #6c7d8e;">UNIT: MOFY-SR-ENG · SCAN IN PROGRESS</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; color: #2fd06b;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2fd06b; box-shadow: 0 0 10px rgba(47,208,107,0.9); animation: blink 1.8s ease-in-out infinite;"></span>ALL SYSTEMS NOMINAL</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 48px;">
+
+          <!-- Backend -->
+          <div style="display: flex; flex-direction: column; gap: 22px;">
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.1em; color: #16d5ff; margin: 0; padding-bottom: 12px; border-bottom: 1px solid rgba(22,213,255,0.2);">BACKEND SYSTEMS · 10+ YRS</h3>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Golang</span><span style="font-family: 'Space Grotesk', sans-serif; color: #16d5ff;">99%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="99" style="height: 100%; width: 99%; border-radius: 3px; background: linear-gradient(90deg, #16d5ff, #01a2ef); box-shadow: 0 0 12px rgba(22,213,255,0.6); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Docker</span><span style="font-family: 'Space Grotesk', sans-serif; color: #16d5ff;">90%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="90" style="height: 100%; width: 90%; border-radius: 3px; background: linear-gradient(90deg, #16d5ff, #01a2ef); box-shadow: 0 0 12px rgba(22,213,255,0.6); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Kubernetes</span><span style="font-family: 'Space Grotesk', sans-serif; color: #16d5ff;">80%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="80" style="height: 100%; width: 80%; border-radius: 3px; background: linear-gradient(90deg, #16d5ff, #01a2ef); box-shadow: 0 0 12px rgba(22,213,255,0.6); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Node.js</span><span style="font-family: 'Space Grotesk', sans-serif; color: #16d5ff;">70%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="70" style="height: 100%; width: 70%; border-radius: 3px; background: linear-gradient(90deg, #16d5ff, #01a2ef); box-shadow: 0 0 12px rgba(22,213,255,0.6); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div style="display: flex; flex-direction: column; gap: 22px;">
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.1em; color: #a78bfa; margin: 0; padding-bottom: 12px; border-bottom: 1px solid rgba(125,92,240,0.3);">INTERFACE LAYER · 8+ YRS</h3>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Next.js</span><span style="font-family: 'Space Grotesk', sans-serif; color: #a78bfa;">90%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="90" style="height: 100%; width: 90%; border-radius: 3px; background: linear-gradient(90deg, #7d5cf0, #a78bfa); box-shadow: 0 0 12px rgba(125,92,240,0.6); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Vue.js</span><span style="font-family: 'Space Grotesk', sans-serif; color: #a78bfa;">85%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="85" style="height: 100%; width: 85%; border-radius: 3px; background: linear-gradient(90deg, #7d5cf0, #a78bfa); box-shadow: 0 0 12px rgba(125,92,240,0.6); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">React</span><span style="font-family: 'Space Grotesk', sans-serif; color: #a78bfa;">70%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="70" style="height: 100%; width: 70%; border-radius: 3px; background: linear-gradient(90deg, #7d5cf0, #a78bfa); box-shadow: 0 0 12px rgba(125,92,240,0.6); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Flutter</span><span style="font-family: 'Space Grotesk', sans-serif; color: #a78bfa;">60%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="60" style="height: 100%; width: 60%; border-radius: 3px; background: linear-gradient(90deg, #7d5cf0, #a78bfa); box-shadow: 0 0 12px rgba(125,92,240,0.6); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+          </div>
+
+          <!-- Operations -->
+          <div style="display: flex; flex-direction: column; gap: 22px;">
+            <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.1em; color: #9fb4c4; margin: 0; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.14);">OPERATIONS · HUMAN LAYER</h3>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Fullstack delivery</span><span style="font-family: 'Space Grotesk', sans-serif; color: #9fb4c4;">90%</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="90" style="height: 100%; width: 90%; border-radius: 3px; background: linear-gradient(90deg, #4c6075, #9fb4c4); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">Leadership</span><span style="font-family: 'Space Grotesk', sans-serif; color: #9fb4c4;">5+ yrs</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="78" style="height: 100%; width: 78%; border-radius: 3px; background: linear-gradient(90deg, #4c6075, #9fb4c4); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 13px;"><span style="font-weight: 600; color: #E8EDF5;">English</span><span style="font-family: 'Space Grotesk', sans-serif; color: #9fb4c4;">Intermediate</span></div>
+              <div style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden;"><div data-bar="62" style="height: 100%; width: 62%; border-radius: 3px; background: linear-gradient(90deg, #4c6075, #9fb4c4); transition: width 1.4s cubic-bezier(0.22,1,0.36,1);"></div></div>
+            </div>
+            <div style="margin-top: 6px; padding: 14px 16px; border-radius: 10px; border: 1px dashed rgba(47,208,107,0.4); background: rgba(47,208,107,0.05); font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.1em; color: #2fd06b;">✓ INSPECTION PASSED — CLEARED FOR DEPLOYMENT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- career trace -->
+    <div data-reveal="up" style="transition: opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1); margin-top: 56px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.18em; color: #4c6075; margin-right: 8px;">PRODUCTION HISTORY →</span>
+      <span style="font-size: 12px; padding: 6px 14px; border-radius: 1000px; border: 1px solid rgba(255,255,255,0.12); color: #8e9ba8;">Sky Mavis ’23–24</span>
+      <span style="color: #16d5ff; font-size: 11px;">→</span>
+      <span style="font-size: 12px; padding: 6px 14px; border-radius: 1000px; border: 1px solid rgba(255,255,255,0.12); color: #8e9ba8;">Buymed ’20–23</span>
+      <span style="color: #16d5ff; font-size: 11px;">→</span>
+      <span style="font-size: 12px; padding: 6px 14px; border-radius: 1000px; border: 1px solid rgba(255,255,255,0.12); color: #8e9ba8;">Techub IO ’19–20</span>
+      <span style="color: #16d5ff; font-size: 11px;">→</span>
+      <span style="font-size: 12px; padding: 6px 14px; border-radius: 1000px; border: 1px solid rgba(255,255,255,0.12); color: #8e9ba8;">Giao Hang Nhanh ’17–19</span>
+      <span style="color: #16d5ff; font-size: 11px;">→</span>
+      <span style="font-size: 12px; padding: 6px 14px; border-radius: 1000px; border: 1px solid rgba(255,255,255,0.12); color: #8e9ba8;">+2 earlier</span>
+    </div>
+  </section>
+
+  <!-- ======================= CONTACT ======================= -->
+  <section id="contact" data-screen-label="Contact" style="position: relative; padding: 120px 40px 60px; max-width: 1140px; margin: 0 auto;">
+    <div data-parallax="0.06" style="position: absolute; top: 0; left: 30%; width: 560px; height: 380px; border-radius: 50%; background: radial-gradient(ellipse, rgba(22,213,255,0.1) 0%, rgba(125,92,240,0.08) 45%, transparent 70%); filter: blur(14px); pointer-events: none;"></div>
+
+    <div data-reveal="up" style="transition: opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1); position: relative; text-align: center; padding: 40px 0 80px;">
+      <div style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.24em; color: #16d5ff; margin-bottom: 20px;">✦ FINAL STATION — DISPATCH</div>
+      <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 72px); letter-spacing: -0.02em; line-height: 1.04; margin: 0 0 22px; color: #F2F6FC;">Have a system<br>to assemble?</h2>
+      <p style="max-width: 460px; margin: 0 auto 44px; font-size: 16px; line-height: 1.7; color: #8e9ba8; text-wrap: pretty;">The line has capacity. Send the spec and production starts.</p>
+      <a href="mailto:tamthanh770@gmail.com" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 40px; border-radius: 12px; background: linear-gradient(135deg, #16d5ff 0%, #7d5cf0 100%); color: #04121a; font-size: 16px; font-weight: 700; text-decoration: none; box-shadow: 0 0 44px rgba(22,213,255,0.3), 0 0 80px rgba(125,92,240,0.2);" style-hover="box-shadow: 0 0 64px rgba(22,213,255,0.5), 0 0 120px rgba(125,92,240,0.35); transform: translateY(-2px);">
+        Start a project
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+
+      <div style="display: flex; justify-content: center; gap: 36px; margin-top: 56px; flex-wrap: wrap;">
+        <a href="mailto:tamthanh770@gmail.com" style="display: inline-flex; align-items: center; gap: 9px; font-size: 14px; color: #8e9ba8; text-decoration: none;" style-hover="color: #16d5ff;">✉ tamthanh770@gmail.com</a>
+        <a href="https://www.linkedin.com/in/tam-nguyen-b566b5129" target="_blank" style="display: inline-flex; align-items: center; gap: 9px; font-size: 14px; color: #8e9ba8; text-decoration: none;" style-hover="color: #16d5ff;">in/ tam-nguyen</a>
+        <span style="display: inline-flex; align-items: center; gap: 9px; font-size: 14px; color: #8e9ba8;">◉ Ho Chi Minh City, VN</span>
+      </div>
+    </div>
+
+    <footer style="border-top: 1px solid rgba(255,255,255,0.07); padding: 28px 0 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+      <span style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.14em; color: #4c6075;">MOFY.FACTORY — UNIT 2026 · ALL MODULES TESTED</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; font-family: 'Space Grotesk', sans-serif; font-size: 12px; letter-spacing: 0.14em; color: #4c6075;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #2fd06b; animation: blink 2s ease-in-out infinite;"></span>LINE STATUS: OPERATIONAL</span>
+    </footer>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    // --- scroll reveal -----------------------------------------------------
+    const reveals = Array.from(document.querySelectorAll('[data-reveal]'));
+    reveals.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top > window.innerHeight * 0.82) {
+        const dir = el.getAttribute('data-reveal');
+        el.style.opacity = '0';
+        el.style.transform =
+          dir === 'left' ? 'translateX(-70px)' :
+          dir === 'right' ? 'translateX(90px)' :
+          'translateY(54px)';
+      }
+    });
+    this._io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'none';
+          this._io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach((el) => this._io.observe(el));
+
+    // --- calibration bars fill on view ------------------------------------
+    const bars = Array.from(document.querySelectorAll('[data-bar]'));
+    bars.forEach((el) => { el.style.width = '0%'; });
+    // Observe the full-width parent track (the bar itself is zero-width, so
+    // an observer on it would never intersect).
+    this._ioBar = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          const bar = en.target.querySelector('[data-bar]');
+          if (bar) {
+            setTimeout(() => { bar.style.width = bar.getAttribute('data-bar') + '%'; }, 150);
+          }
+          this._ioBar.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.35 });
+    bars.forEach((el) => { if (el.parentElement) this._ioBar.observe(el.parentElement); });
+
+    // --- parallax orbs ------------------------------------------------------
+    this._parallaxEls = Array.from(document.querySelectorAll('[data-parallax]'));
+    this._ticking = false;
+    this._onScroll = () => {
+      if (this._ticking) return;
+      this._ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        this._parallaxEls.forEach((el) => {
+          const f = parseFloat(el.getAttribute('data-parallax')) || 0;
+          el.style.transform = 'translateY(' + (y * f) + 'px)';
+        });
+        this._ticking = false;
+      });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+
+    // --- hero 3D kinetic sculpture -----------------------------------------
+    this._init3D();
+  }
+
+  _init3D() {
+    const tryInit = () => {
+      if (window.THREE) { this._setupScene(); return; }
+      this._threeTimer = setTimeout(tryInit, 100);
+    };
+    tryInit();
+  }
+
+  _setupScene() {
+    const THREE = window.THREE;
+    const host = document.querySelector('[data-hero-3d]');
+    if (!host || this._renderer3d) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = window.innerWidth < 768;
+    const W = Math.max(host.clientWidth, 10);
+    const H = Math.max(host.clientHeight, 10);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(Math.max(window.devicePixelRatio || 1, 1), isMobile ? 1.25 : 1.75));
+    renderer.setSize(W, H);
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    host.appendChild(renderer.domElement);
+    this._renderer3d = renderer;
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(35, W / H, 0.1, 60);
+    camera.position.set(0, 0.55, 9.2);
+    camera.lookAt(0, 0, 0);
+
+    // soft studio lighting: warm key, cool cyan fill, violet rim
+    scene.add(new THREE.HemisphereLight(0xbfd8ff, 0x10141d, 0.6));
+    const key = new THREE.DirectionalLight(0xfff1e0, 1.15); key.position.set(-4, 5, 4); scene.add(key);
+    const fill = new THREE.DirectionalLight(0x9fd8ff, 0.45); fill.position.set(5, 0.5, 2); scene.add(fill);
+    const rim = new THREE.PointLight(0x7d5cf0, 1.8, 12); rim.position.set(0, 0, 0.6); scene.add(rim);
+
+    const root = new THREE.Group();
+    root.rotation.set(0.16, -0.5, 0.06);
+    if (isMobile) root.scale.setScalar(0.7);
+    scene.add(root);
+
+    // warm ceramic material (shared)
+    const ceramic = new THREE.MeshPhysicalMaterial({ color: 0xf2f0f5, roughness: 0.32, metalness: 0.03, clearcoat: 0.5, clearcoatRoughness: 0.3 });
+
+    // segmented ring — 4 independent torus arcs
+    const segGeo = new THREE.TorusGeometry(1.7, 0.3, 26, 44, Math.PI * 0.42);
+    const segs = [];
+    for (let i = 0; i < 4; i++) {
+      const m = new THREE.Mesh(segGeo, ceramic);
+      const base = i * Math.PI / 2 + Math.PI * 0.04;
+      m.rotation.z = base;
+      root.add(m);
+      segs.push({ m, mid: base + Math.PI * 0.21, i });
+    }
+
+    // soft radial glow sprite texture
+    const cv = document.createElement('canvas'); cv.width = cv.height = 128;
+    const cx2 = cv.getContext('2d');
+    const grad = cx2.createRadialGradient(64, 64, 0, 64, 64, 64);
+    grad.addColorStop(0, 'rgba(255,255,255,1)');
+    grad.addColorStop(0.35, 'rgba(255,255,255,0.5)');
+    grad.addColorStop(1, 'rgba(255,255,255,0)');
+    cx2.fillStyle = grad; cx2.fillRect(0, 0, 128, 128);
+    const glowTex = new THREE.CanvasTexture(cv);
+    const mkGlow = (color, size) => {
+      const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false }));
+      s.scale.setScalar(size);
+      return s;
+    };
+
+    // central glowing beam — translucent shell + violet core + bloom sprites
+    const beamPivot = new THREE.Group();
+    beamPivot.rotation.set(1.05, 0.25, 0.5);
+    root.add(beamPivot);
+    const beam = new THREE.Group();
+    beamPivot.add(beam);
+    beam.add(new THREE.Mesh(new THREE.BoxGeometry(0.24, 0.24, 5.4), new THREE.MeshPhysicalMaterial({ color: 0xffffff, roughness: 0.15, metalness: 0, transparent: true, opacity: 0.16 })));
+    beam.add(new THREE.Mesh(new THREE.BoxGeometry(0.085, 0.085, 5.5), new THREE.MeshBasicMaterial({ color: 0xa78bfa })));
+    const glows = [mkGlow(0x7d5cf0, 1.9), mkGlow(0x7d5cf0, 1.1), mkGlow(0x16d5ff, 0.9)];
+    glows[1].position.z = 2.5;
+    glows[2].position.z = -2.5;
+    glows.forEach((s) => beam.add(s));
+
+    // golden token orbiting the ring
+    const token = new THREE.Mesh(new THREE.SphereGeometry(0.13, 24, 24), new THREE.MeshStandardMaterial({ color: 0xd7a137, metalness: 0.75, roughness: 0.25 }));
+    token.add(mkGlow(0xffbc5e, 0.55));
+    root.add(token);
+
+    // chatbot-agent head — ceramic head, glowing cyan eyes, antenna
+    const bot = new THREE.Group();
+    bot.add(new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.26, 0.22), ceramic));
+    const eyeMat = new THREE.MeshBasicMaterial({ color: 0x16d5ff });
+    const eyeGeo = new THREE.BoxGeometry(0.055, 0.075, 0.02);
+    const eyeL = new THREE.Mesh(eyeGeo, eyeMat); eyeL.position.set(-0.07, 0.02, 0.115);
+    const eyeR = new THREE.Mesh(eyeGeo, eyeMat); eyeR.position.set(0.07, 0.02, 0.115);
+    const antenna = new THREE.Mesh(new THREE.CylinderGeometry(0.012, 0.012, 0.12, 8), ceramic);
+    antenna.position.y = 0.19;
+    const antennaTip = new THREE.Mesh(new THREE.SphereGeometry(0.032, 12, 12), new THREE.MeshBasicMaterial({ color: 0x7d5cf0 }));
+    antennaTip.position.y = 0.26;
+    bot.add(eyeL, eyeR, antenna, antennaTip, mkGlow(0x16d5ff, 0.5));
+    root.add(bot);
+
+    // code-terminal block — dark slate slab with glowing ">" prompt + cursor
+    const codeBlock = new THREE.Group();
+    const slate = new THREE.MeshPhysicalMaterial({ color: 0x222a38, roughness: 0.35, metalness: 0.2, clearcoat: 0.4, clearcoatRoughness: 0.3 });
+    codeBlock.add(new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.32, 0.08), slate));
+    const promptMat = new THREE.MeshBasicMaterial({ color: 0xa78bfa });
+    const barGeo = new THREE.BoxGeometry(0.13, 0.035, 0.02);
+    const chevTop = new THREE.Mesh(barGeo, promptMat); chevTop.position.set(-0.1, 0.035, 0.045); chevTop.rotation.z = -0.7;
+    const chevBot = new THREE.Mesh(barGeo, promptMat); chevBot.position.set(-0.1, -0.035, 0.045); chevBot.rotation.z = 0.7;
+    const cursorMat = new THREE.MeshBasicMaterial({ color: 0x16d5ff, transparent: true });
+    const cursor = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.035, 0.02), cursorMat);
+    cursor.position.set(0.08, -0.06, 0.045);
+    codeBlock.add(chevTop, chevBot, cursor, mkGlow(0x7d5cf0, 0.5));
+    root.add(codeBlock);
+
+    // floating fins / panels / wedges
+    const finGroup = new THREE.Group();
+    root.add(finGroup);
+    const panelGeo = new THREE.BoxGeometry(0.46, 0.025, 0.26);
+    const finGeo = new THREE.ConeGeometry(0.13, 0.3, 3);
+    const wedgeGeo = new THREE.BoxGeometry(0.16, 0.05, 0.34);
+    const finCount = isMobile ? 4 : 8;
+    const fins = [];
+    for (let i = 0; i < finCount; i++) {
+      const geo = i % 3 === 0 ? finGeo : (i % 3 === 1 ? panelGeo : wedgeGeo);
+      const f = new THREE.Mesh(geo, ceramic);
+      finGroup.add(f);
+      fins.push({ f, a0: (i / finCount) * Math.PI * 2, r: 2.3 + (i % 3) * 0.25, tilt: (i % 2 ? 1 : -1) });
+    }
+
+    // --- seamless 6s loop (all angular motion = integer revolutions) --------
+    const TWO_PI = Math.PI * 2;
+    const t0 = performance.now();
+    let px = 0, py = 0, vx = 0, vy = 0;
+    this._onMouse3d = (e) => {
+      px = (e.clientX / window.innerWidth - 0.5) * 2;
+      py = (e.clientY / window.innerHeight - 0.5) * 2;
+    };
+    if (!reduced) window.addEventListener('mousemove', this._onMouse3d, { passive: true });
+
+    const renderFrame = (now) => {
+      const loop = ((now - t0) / 1000 % 6) / 6;       // 0..1 over 6s
+      const ph = loop * TWO_PI;
+      const open = 0.5 - 0.5 * Math.cos(ph);          // assemble → open → reassemble
+
+      segs.forEach((s, i) => {
+        const sep = open * (0.5 + (i % 2) * 0.18);
+        s.m.position.set(Math.cos(s.mid) * sep, Math.sin(s.mid) * sep, (i % 2 ? 1 : -1) * open * 0.42);
+        s.m.rotation.x = (i % 2 ? 1 : -1) * open * 0.5;
+        s.m.rotation.y = Math.sin(ph + i) * 0.1 * open;
+      });
+
+      beam.position.z = Math.sin(ph) * 0.85;
+      beamPivot.rotation.z = 0.5 + Math.sin(ph) * 0.18;
+      const pulse = 0.75 + 0.25 * Math.sin(ph * 2);
+      glows[0].material.opacity = 0.55 * pulse + open * 0.3;
+      glows[1].material.opacity = 0.45 * pulse;
+      glows[2].material.opacity = 0.45 * pulse;
+      rim.intensity = 1.4 + open * 1.2 + Math.sin(ph * 2) * 0.25;
+
+      token.position.set(Math.cos(ph) * 2.15, Math.sin(ph) * 1.98, Math.sin(ph * 2) * 0.3);
+
+      // bot + code block orbit, evenly phased thirds around the same loop
+      const ba = ph + TWO_PI / 3;
+      bot.position.set(Math.cos(ba) * 2.3, Math.sin(ba) * 2.0, Math.cos(ba * 2) * 0.35);
+      bot.rotation.y = Math.sin(ph) * 0.5 - 0.2;
+      bot.rotation.z = Math.sin(ph + 1) * 0.12;
+      bot.position.y += Math.sin(ph * 2 + 1) * 0.06;
+
+      const ca = ph + TWO_PI * 2 / 3;
+      codeBlock.position.set(Math.cos(ca) * 2.25, Math.sin(ca) * 2.05, Math.sin(ca * 2) * 0.3);
+      codeBlock.rotation.y = Math.sin(ph + 2) * 0.5 + 0.2;
+      codeBlock.rotation.x = Math.sin(ph) * 0.15;
+      cursorMat.opacity = 0.5 + 0.5 * Math.sin(ph * 6);   // blinking cursor, seamless
+
+      fins.forEach((fn, i) => {
+        const a = fn.a0 + ph;
+        const r = fn.r + open * 0.5;
+        fn.f.position.set(Math.cos(a) * r, Math.sin(a) * r * 0.8, fn.tilt * (0.3 + open * 0.5) * Math.sin(a + i));
+        fn.f.rotation.set(a * fn.tilt, a, Math.sin(ph + i));
+      });
+
+      root.position.y = Math.sin(ph) * 0.07;
+      vx += (px - vx) * 0.04;
+      vy += (py - vy) * 0.04;
+      root.rotation.y = -0.5 + vx * 0.1 + Math.sin(ph) * 0.05;
+      root.rotation.x = 0.16 + vy * 0.06;
+
+      renderer.render(scene, camera);
+    };
+
+    if (reduced) {
+      renderFrame(t0 + 900);   // static assembled-ish frame
+    } else {
+      const tick = (now) => { this._raf3d = requestAnimationFrame(tick); renderFrame(now); };
+      this._io3d = new IntersectionObserver((en) => {
+        const vis = en[0].isIntersecting;
+        if (vis && !this._raf3d) this._raf3d = requestAnimationFrame(tick);
+        if (!vis && this._raf3d) { cancelAnimationFrame(this._raf3d); this._raf3d = 0; }
+      });
+      this._io3d.observe(host);
+    }
+
+    this._ro3d = new ResizeObserver(() => {
+      const w = Math.max(host.clientWidth, 10);
+      const h = Math.max(host.clientHeight, 10);
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      if (reduced) renderFrame(t0 + 900);
+    });
+    this._ro3d.observe(host);
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this._ioBar) this._ioBar.disconnect();
+    if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
+    if (this._threeTimer) clearTimeout(this._threeTimer);
+    if (this._raf3d) cancelAnimationFrame(this._raf3d);
+    if (this._io3d) this._io3d.disconnect();
+    if (this._ro3d) this._ro3d.disconnect();
+    if (this._onMouse3d) window.removeEventListener('mousemove', this._onMouse3d);
+    if (this._renderer3d) {
+      const el = this._renderer3d.domElement;
+      if (el && el.parentNode) el.parentNode.removeChild(el);
+      this._renderer3d.dispose();
+      this._renderer3d = null;
+    }
+  }
+
+  renderVals() {
+    return {};
+  }
+}
+</script>
 </body>
-
 </html>
