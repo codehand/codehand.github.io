@@ -1,0 +1,294 @@
+/* ===========================================================================
+   NextPassword — Colors & Type tokens
+   ---------------------------------------------------------------------------
+   Single source of truth. Import this anywhere visual:
+     <link rel="stylesheet" href="colors_and_type.css">
+
+   Brand: macOS-native (Apple HIG) with a NextPassword indigo layer.
+   Default rendering: dark mode (vaults read as private).
+   =========================================================================== */
+
+/* ---------------------------------------------------------------------
+   FONTS — San Francisco (SF Pro) is the brand font.
+   - macOS / iOS / iPadOS / Safari: SF Pro is the system font and resolves
+     automatically via `-apple-system` / `BlinkMacSystemFont`. No download.
+   - Other platforms: drop the official Apple SF Pro WOFF2 files into
+     `fonts/` and the @font-face blocks below will pick them up. License
+     and downloads: https://developer.apple.com/fonts/
+   - As a last resort, we link Inter (the closest open-source approximation
+     of SF) from Google Fonts. Comment out the @import to fully forbid the
+     fallback.  Same idea for JetBrains Mono ↔ SF Mono.
+   --------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* If the SF Pro WOFFs exist in fonts/, register them. If they don't, the
+   browser silently skips these blocks and the rest of the stack handles it. */
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 400 700;
+  font-display: swap;
+  src: local("SF Pro Display"), local("SFProDisplay-Regular"),
+       url("fonts/SF-Pro-Display.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 400 700;
+  font-display: swap;
+  src: local("SF Pro Text"), local("SFProText-Regular"),
+       url("fonts/SF-Pro-Text.woff2") format("woff2");
+}
+@font-face {
+  font-family: "SF Mono";
+  font-weight: 400 600;
+  font-display: swap;
+  src: local("SF Mono"), local("SFMono-Regular"),
+       url("fonts/SF-Mono.woff2") format("woff2");
+}
+
+:root {
+  /* ---------------------------------------------------------------------
+     COLOR — base palette
+     macOS system colors (dark mode values used as primary) + brand indigo.
+     --------------------------------------------------------------------- */
+
+  /* Brand */
+  --np-indigo-50:  #EEEDFE;
+  --np-indigo-100: #D7D6FB;
+  --np-indigo-200: #B1ADF7;
+  --np-indigo-300: #8C86F2;
+  --np-indigo-400: #6F69EC;
+  --np-indigo-500: #5E5CE6;  /* primary brand */
+  --np-indigo-600: #4F4DCE;
+  --np-indigo-700: #3D3CA4;
+  --np-indigo-800: #2A2A78;
+  --np-indigo-900: #1A1A4D;
+
+  /* System Blue (macOS accent default) */
+  --np-blue-light: #007AFF;
+  --np-blue-dark:  #0A84FF;
+
+  /* Neutrals — macOS gray scale (dark-first) */
+  --np-gray-0:   #FFFFFF;
+  --np-gray-50:  #F5F5F7;  /* page bg in light */
+  --np-gray-100: #E5E5EA;
+  --np-gray-200: #D1D1D6;
+  --np-gray-300: #C7C7CC;
+  --np-gray-400: #AEAEB2;
+  --np-gray-500: #8E8E93;  /* secondary text */
+  --np-gray-600: #636366;
+  --np-gray-700: #48484A;
+  --np-gray-800: #3A3A3C;
+  --np-gray-850: #2C2C2E;  /* card / elevated surface (dark) */
+  --np-gray-900: #1C1C1E;  /* page bg (dark) */
+  --np-gray-950: #000000;
+
+  /* Semantic system colors (macOS) */
+  --np-red:    #FF453A;  /* dark variant */
+  --np-orange: #FF9F0A;
+  --np-yellow: #FFD60A;
+  --np-green:  #32D74B;
+
+  --np-red-light:    #FF3B30;
+  --np-orange-light: #FF9500;
+  --np-yellow-light: #FFCC00;
+  --np-green-light:  #34C759;
+
+  /* ---------------------------------------------------------------------
+     COLOR — semantic tokens (DARK is default)
+     --------------------------------------------------------------------- */
+  --bg1:       var(--np-gray-900);          /* page */
+  --bg2:       var(--np-gray-850);          /* card / sheet */
+  --bg3:       var(--np-gray-800);          /* elevated above card */
+  --bg-input:  rgb(255 255 255 / 0.06);     /* form fields */
+  --bg-hover:  rgb(255 255 255 / 0.06);
+  --bg-press:  rgb(255 255 255 / 0.10);
+  --bg-vibrancy: rgb(28 28 30 / 0.72);      /* approximates .regularMaterial */
+
+  --fg1:       var(--np-gray-0);            /* primary text */
+  --fg2:       var(--np-gray-400);          /* secondary text */
+  --fg3:       var(--np-gray-500);          /* tertiary / placeholder */
+  --fg-on-accent: #FFFFFF;
+
+  --border:        rgb(255 255 255 / 0.10);
+  --border-strong: rgb(255 255 255 / 0.18);
+  --separator:     rgb(255 255 255 / 0.08);
+
+  --accent:        var(--np-blue-dark);     /* macOS system accent (dark) */
+  --accent-hover:  #2E94FF;
+  --accent-press:  #006EE0;
+  --accent-bg:     rgb(10 132 255 / 0.18);
+  --accent-ring:   rgb(10 132 255 / 0.50);
+
+  --brand:         var(--np-indigo-500);    /* NextPassword indigo */
+  --brand-hover:   var(--np-indigo-400);
+  --brand-bg:      rgb(94 92 230 / 0.16);
+
+  --destructive:       var(--np-red);
+  --destructive-hover: #FF6B62;
+  --destructive-bg:    rgb(255 69 58 / 0.16);
+
+  --warning:           var(--np-orange);
+  --warning-bg:        rgb(255 159 10 / 0.16);
+
+  --success:           var(--np-green);
+  --success-bg:        rgb(50 215 75 / 0.16);
+
+  --favorite:          var(--np-yellow);
+
+  /* ---------------------------------------------------------------------
+     TYPOGRAPHY
+     --------------------------------------------------------------------- */
+  /* Brand font: San Francisco (SF Pro). The first 4 entries resolve to SF on
+     macOS / iOS / Safari natively. The @font-face blocks above add SF on
+     other platforms IF you've placed the WOFF2 files into fonts/. After
+     that, Inter and system-ui only kick in on platforms where SF is
+     genuinely unavailable. */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+               "SF Pro", "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, "JetBrains Mono",
+               "Cascadia Code", Menlo, Consolas, monospace;
+
+  /* Scale — matches SwiftUI text styles */
+  --fs-largeTitle:   34px;
+  --fs-title:        28px;
+  --fs-title2:       22px;
+  --fs-title3:       20px;
+  --fs-headline:     17px;
+  --fs-body:         17px;  /* macOS body is 13px; we use 17 for web density */
+  --fs-callout:      16px;
+  --fs-subheadline:  15px;
+  --fs-footnote:     13px;
+  --fs-caption:      12px;
+  --fs-caption2:     11px;
+
+  --lh-tight:   1.15;
+  --lh-snug:    1.30;
+  --lh-normal:  1.45;
+  --lh-loose:   1.60;
+
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* ---------------------------------------------------------------------
+     SPACING — 4pt ladder
+     --------------------------------------------------------------------- */
+  --sp-0:  0;
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-7:  32px;
+  --sp-8:  40px;
+  --sp-9:  48px;
+  --sp-10: 64px;
+
+  /* ---------------------------------------------------------------------
+     RADII
+     --------------------------------------------------------------------- */
+  --r-xs:    4px;
+  --r-sm:    6px;
+  --r-md:    10px;   /* workhorse — search bar, sheets, form fields */
+  --r-lg:    14px;   /* large sheets / window corners */
+  --r-xl:    20px;
+  --r-pill:  999px;
+
+  /* ---------------------------------------------------------------------
+     SHADOWS / elevation
+     --------------------------------------------------------------------- */
+  --shadow-0: none;
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.20), 0 1px 1px rgb(0 0 0 / 0.30);
+  --shadow-2: 0 8px 24px rgb(0 0 0 / 0.32), 0 2px 6px rgb(0 0 0 / 0.22);
+  --shadow-3: 0 24px 60px rgb(0 0 0 / 0.50), 0 8px 24px rgb(0 0 0 / 0.32);
+  --focus-ring: 0 0 0 2px var(--bg1), 0 0 0 4px var(--accent-ring);
+
+  /* ---------------------------------------------------------------------
+     MOTION
+     --------------------------------------------------------------------- */
+  --ease:        cubic-bezier(.42, 0, .58, 1);   /* easeInOut */
+  --ease-out:    cubic-bezier(.2, .8, .2, 1);
+  --dur-fast:    120ms;
+  --dur:         200ms;
+  --dur-slow:    300ms;
+}
+
+/* ===========================================================================
+   LIGHT MODE override — opt-in via [data-theme="light"] OR system preference
+   =========================================================================== */
+[data-theme="light"] {
+  --bg1:       var(--np-gray-50);
+  --bg2:       var(--np-gray-0);
+  --bg3:       #FAFAFC;
+  --bg-input:  rgb(0 0 0 / 0.04);
+  --bg-hover:  rgb(0 0 0 / 0.05);
+  --bg-press:  rgb(0 0 0 / 0.08);
+  --bg-vibrancy: rgb(245 245 247 / 0.72);
+
+  --fg1:       #1C1C1E;
+  --fg2:       #3A3A3C;
+  --fg3:       var(--np-gray-500);
+
+  --border:        rgb(0 0 0 / 0.10);
+  --border-strong: rgb(0 0 0 / 0.18);
+  --separator:     rgb(0 0 0 / 0.07);
+
+  --accent:        var(--np-blue-light);
+  --accent-hover:  #1A8FFF;
+  --accent-press:  #0064D2;
+  --accent-bg:     rgb(0 122 255 / 0.10);
+  --accent-ring:   rgb(0 122 255 / 0.40);
+
+  --destructive:   var(--np-red-light);
+  --warning:       var(--np-orange-light);
+  --success:       var(--np-green-light);
+  --favorite:      var(--np-yellow-light);
+
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.05), 0 1px 1px rgb(0 0 0 / 0.04);
+  --shadow-2: 0 8px 24px rgb(0 0 0 / 0.12), 0 2px 6px rgb(0 0 0 / 0.08);
+  --shadow-3: 0 24px 60px rgb(0 0 0 / 0.24), 0 8px 24px rgb(0 0 0 / 0.16);
+}
+
+/* ===========================================================================
+   BASE — element defaults driven by tokens
+   =========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg1);
+  color: var(--fg1);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* SwiftUI text-style aliases. Use as classes OR mixin via @apply-style. */
+.t-largeTitle  { font-size: var(--fs-largeTitle);  font-weight: var(--fw-bold);     line-height: var(--lh-tight); letter-spacing: -0.02em; }
+.t-title       { font-size: var(--fs-title);       font-weight: var(--fw-bold);     line-height: var(--lh-tight); letter-spacing: -0.015em; }
+.t-title2      { font-size: var(--fs-title2);      font-weight: var(--fw-bold);     line-height: var(--lh-snug); }
+.t-title3      { font-size: var(--fs-title3);      font-weight: var(--fw-semibold); line-height: var(--lh-snug); }
+.t-headline    { font-size: var(--fs-headline);    font-weight: var(--fw-semibold); line-height: var(--lh-snug); }
+.t-body        { font-size: var(--fs-body);        font-weight: var(--fw-regular);  line-height: var(--lh-normal); }
+.t-callout     { font-size: var(--fs-callout);     font-weight: var(--fw-regular);  line-height: var(--lh-normal); }
+.t-subheadline { font-size: var(--fs-subheadline); font-weight: var(--fw-regular);  line-height: var(--lh-normal); color: var(--fg2); }
+.t-footnote    { font-size: var(--fs-footnote);    font-weight: var(--fw-regular);  line-height: var(--lh-normal); color: var(--fg2); }
+.t-caption     { font-size: var(--fs-caption);     font-weight: var(--fw-regular);  line-height: var(--lh-normal); color: var(--fg2); }
+.t-mono        { font-family: var(--font-mono); font-feature-settings: "tnum", "zero"; }
+
+h1 { font-size: var(--fs-largeTitle); font-weight: var(--fw-bold); line-height: var(--lh-tight); letter-spacing: -0.02em; margin: 0 0 var(--sp-4); }
+h2 { font-size: var(--fs-title);      font-weight: var(--fw-bold); line-height: var(--lh-tight); letter-spacing: -0.015em; margin: 0 0 var(--sp-3); }
+h3 { font-size: var(--fs-title2);     font-weight: var(--fw-bold); line-height: var(--lh-snug);  margin: 0 0 var(--sp-3); }
+h4 { font-size: var(--fs-title3);     font-weight: var(--fw-semibold); margin: 0 0 var(--sp-2); }
+h5 { font-size: var(--fs-headline);   font-weight: var(--fw-semibold); margin: 0 0 var(--sp-2); }
+p  { margin: 0 0 var(--sp-3); }
+code, kbd, samp { font-family: var(--font-mono); font-size: 0.92em; }
+a  { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+::selection { background: var(--accent-bg); color: var(--fg1); }
