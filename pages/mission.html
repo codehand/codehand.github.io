@@ -30,6 +30,18 @@
     @keyframes growBar { from { transform: scaleX(0); } to { transform: scaleX(1); } }
     ::placeholder { color: var(--fg3); }
     input { outline: none; }
+    /* ---- Responsive: fixed 3-col flex collapses <main> on small screens (no media queries existed) ---- */
+    @media (max-width: 960px) {
+      .mc-rail-right { display: none !important; }
+    }
+    @media (max-width: 640px) {
+      .mc-rail-left { display: none !important; }
+      .mc-header { gap: 8px !important; padding: 0 12px !important; }
+      .mc-sublabel, .mc-version, .mc-dots { display: none !important; }
+      /* 3-up stat grid overflowed: 1fr can't shrink below content. Allow shrink + reclaim desktop indent. */
+      .mc-metrics { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 8px !important; margin-left: 0 !important; }
+      .mc-metrics > div { padding: 12px !important; }
+    }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLXEWJM74K"></script>
@@ -44,22 +56,22 @@
 <div data-theme="{{ themeAttr }}" data-screen-label="Mission Control" style="height: 100vh; display: flex; flex-direction: column; background: var(--bg1); color: var(--fg1); font-family: var(--font-sans); overflow: hidden;">
 
   <!-- ============ TOOLBAR ============ -->
-  <header style="height: 52px; flex: none; display: flex; align-items: center; gap: 14px; padding: 0 16px; background: var(--bg2); border-bottom: 1px solid var(--border);">
-    <div style="display: flex; gap: 8px; flex: none;">
+  <header class="mc-header" style="height: 52px; flex: none; display: flex; align-items: center; gap: 14px; padding: 0 16px; background: var(--bg2); border-bottom: 1px solid var(--border);">
+    <div class="mc-dots" style="display: flex; gap: 8px; flex: none;">
       <div style="width: 12px; height: 12px; border-radius: 999px; background: #FF5F57;"></div>
       <div style="width: 12px; height: 12px; border-radius: 999px; background: #FEBC2E;"></div>
       <div style="width: 12px; height: 12px; border-radius: 999px; background: #28C840;"></div>
     </div>
     <div style="display: flex; align-items: baseline; gap: 10px; margin-left: 4px;">
       <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: var(--fg1); letter-spacing: 0.02em;">MOFY-1</span>
-      <span style="font-size: 13px; color: var(--fg3);">Mission Control</span>
+      <span class="mc-sublabel" style="font-size: 13px; color: var(--fg3);">Mission Control</span>
     </div>
     <div style="display: flex; align-items: center; gap: 6px; background: var(--success-bg); border-radius: 999px; padding: 3px 10px;">
       <div style="width: 6px; height: 6px; border-radius: 999px; background: var(--success);"></div>
       <span style="font-size: 11px; font-weight: 500; color: var(--success);">Online</span>
     </div>
     <div style="margin-left: auto; display: flex; align-items: center; gap: 12px;">
-      <span style="font-size: 11px; color: var(--fg3); font-family: var(--font-mono);">portfolio agent · v11.2</span>
+      <span class="mc-version" style="font-size: 11px; color: var(--fg3); font-family: var(--font-mono);">portfolio agent · v11.2</span>
       <div style="display: flex; background: var(--bg-input); border-radius: 7px; padding: 2px; gap: 2px;">
         <button onClick="{{ setOperator }}" style="{{ segOperator }}">Operator</button>
         <button onClick="{{ setConsole }}" style="{{ segConsole }}">Console</button>
@@ -73,7 +85,7 @@
 
     <!-- ============ SIDEBAR: AGENT + TASK QUEUE ============ -->
     <sc-if value="{{ showPanels }}" hint-placeholder-val="{{ true }}">
-      <aside style="width: 248px; flex: none; background: var(--bg2); border-right: 1px solid var(--border); display: flex; flex-direction: column;">
+      <aside class="mc-rail-left" style="width: 248px; flex: none; background: var(--bg2); border-right: 1px solid var(--border); display: flex; flex-direction: column;">
         <div style="padding: 16px; display: flex; gap: 10px; align-items: center; border-bottom: 1px solid var(--separator);">
           <img src="avatar.png" alt="Mofy" style="width: 36px; height: 36px; border-radius: 9px; object-fit: cover; object-position: 50% 18%; flex: none;" />
           <div style="min-width: 0;">
@@ -174,7 +186,7 @@
                       <div style="font-size: 12px; color: var(--fg3);">Ho Chi Minh City · UTC+7</div>
                     </div>
                   </div>
-                  <p style="font-size: 14px; color: var(--fg2); line-height: 1.55; margin: 14px 0 0;">Ten years designing, building and shipping backend systems that stay up under load — microservices, gRPC, Kubernetes, from first commit to production. Frontend when the product needs it.</p>
+                  <p style="font-size: 14px; color: var(--fg2); line-height: 1.55; margin: 14px 0 0;">{{ years }} years designing, building and shipping backend systems that stay up under load — microservices, gRPC, Kubernetes, from first commit to production. Frontend when the product needs it.</p>
                   <div style="display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap;">
                     <a href="https://www.linkedin.com/in/mofy-nguyen" target="_blank" style="font-size: 12px; font-weight: 500; color: var(--accent); background: var(--accent-bg); padding: 5px 11px; border-radius: 999px; text-decoration: none;">LinkedIn</a>
                     <a href="https://github.com/codehand" target="_blank" style="font-size: 12px; font-weight: 500; color: var(--accent); background: var(--accent-bg); padding: 5px 11px; border-radius: 999px; text-decoration: none;">GitHub</a>
@@ -185,7 +197,7 @@
 
               <!-- ===== CARD: metrics.report ===== -->
               <sc-if value="{{ e.isMetrics }}" hint-placeholder-val="{{ false }}">
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; max-width: 560px; margin: 4px 0 6px 32px;">
+                <div class="mc-metrics" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; max-width: 560px; margin: 4px 0 6px 32px;">
                   <div style="background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 16px; box-shadow: var(--shadow-1);">
                     <div style="font-family: var(--font-mono); font-size: 26px; font-weight: 600; color: var(--fg1); font-feature-settings: 'tnum';">{{ yearsExperience }}</div>
                     <div style="font-size: 11px; font-weight: 500; letter-spacing: 0.06em; color: var(--fg3); margin-top: 4px;">YEARS IN PRODUCTION</div>
@@ -386,7 +398,7 @@
 
     <!-- ============ RIGHT RAIL: TELEMETRY ============ -->
     <sc-if value="{{ showPanels }}" hint-placeholder-val="{{ true }}">
-      <aside style="width: 260px; flex: none; border-left: 1px solid var(--border); padding: 16px; display: flex; flex-direction: column; gap: 22px; overflow-y: auto; background: var(--bg1);">
+      <aside class="mc-rail-right" style="width: 260px; flex: none; border-left: 1px solid var(--border); padding: 16px; display: flex; flex-direction: column; gap: 22px; overflow-y: auto; background: var(--bg1);">
         <div>
           <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: var(--fg3);">TELEMETRY</div>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px;">
@@ -456,11 +468,13 @@ class Component extends DCLogic {
   streamRef = React.createRef();
   _timers = [];
 
+  get YEARS() { return new Date().getFullYear() - 2014; }
+
   TASKS = [
     {
       id: 'profile.load', desc: 'Identity & summary', card: 'profile',
       script: ['resolving identity', 'linking channels: linkedin · github · blog', 'profile ready'],
-      reply: 'This is Tam Nguyen — call sign Mofy. Senior software engineer, Golang first, ten years in production.'
+      reply: 'This is Tam Nguyen — call sign Mofy. Senior software engineer, Golang first, {years} years in production.'
     },
     {
       id: 'metrics.report', desc: 'Career numbers', card: 'metrics',
@@ -475,7 +489,7 @@ class Component extends DCLogic {
     {
       id: 'timeline.index', desc: 'Work history', card: 'timeline',
       script: ['indexing 2014 → 2024', '6 positions · 1 degree found', 'index ready'],
-      reply: 'Eleven years, six companies. Most recent first.'
+      reply: '{years} years, six companies. Most recent first.'
     },
     {
       id: 'infra.scan', desc: 'Platform & data', card: 'infra',
@@ -560,7 +574,7 @@ class Component extends DCLogic {
       this.wait(delay, () => this.log(line));
       delay += 300 + Math.random() * 250;
     });
-    this.wait(delay + 100, () => this.typeReply(t.reply, () => {
+    this.wait(delay + 100, () => this.typeReply(t.reply.replace('{years}', this.YEARS), () => {
       this.push({ k: 'card', card: t.card });
       this.setState(s => ({ busy: false, statuses: { ...s.statuses, [id]: 'done' } }));
     }));
@@ -693,7 +707,8 @@ class Component extends DCLogic {
       streamRef: this.streamRef,
       onKeyDown: (e) => { if (e.key === 'Enter') this.submit(); },
       onSend: () => this.submit(),
-      yearsExperience: (new Date().getFullYear() - 2014) + '+'
+      years: this.YEARS,
+      yearsExperience: this.YEARS + '+'
     };
   }
 }
