@@ -21,6 +21,12 @@
   <link rel="stylesheet" href="colors_and_type.css">
   <style>
     html, body { height: 100%; overflow: hidden; }
+    /* Root must track the *visible* viewport. 100vh on mobile includes the
+       area behind the browser UI, which clips the bottom composer. dvh tracks
+       the dynamic visible height; vh is the fallback for old browsers. Kept in
+       the stylesheet (not inline) so the two-declaration fallback survives the
+       framework's inline-style -> style-object parsing. */
+    .mc-root { height: 100vh; height: 100dvh; }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
     @keyframes spin { to { transform: rotate(360deg); } }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
@@ -53,7 +59,7 @@
   </script>
 </helmet>
 
-<div data-theme="{{ themeAttr }}" data-screen-label="Mission Control" style="height: 100vh; display: flex; flex-direction: column; background: var(--bg1); color: var(--fg1); font-family: var(--font-sans); overflow: hidden;">
+<div data-theme="{{ themeAttr }}" data-screen-label="Mission Control" class="mc-root" style="display: flex; flex-direction: column; background: var(--bg1); color: var(--fg1); font-family: var(--font-sans); overflow: hidden;">
 
   <!-- ============ TOOLBAR ============ -->
   <header class="mc-header" style="height: 52px; flex: none; display: flex; align-items: center; gap: 14px; padding: 0 16px; background: var(--bg2); border-bottom: 1px solid var(--border);">
